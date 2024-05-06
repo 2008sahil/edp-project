@@ -9,7 +9,7 @@
     <button id="publishButton">Publish Log</button>
     <script>
         document.getElementById("publishButton").addEventListener("click", function() {
-            fetch('http://localhost:4000/publish')
+            fetch('https://edp-project-7nuwdoz6j-2001sahils-projects.vercel.app/publish')
             .then(response => response.text())
             .then(data => console.log(data))
             .catch(error => console.error('Error:', error));
